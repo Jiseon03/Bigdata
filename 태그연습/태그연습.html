@@ -7,23 +7,79 @@
 </head>
 <style>
     div{
-        color: skyblue;
+      color:black;
     }
 
     .blue{
-       color: cornflowerblue;
+      color: cornflowerblue;
     }
+
+    .text-red{
+      color: red;
+    }
+
+    .bg-blue p{
+        background-color:skyblue;
+    }
+
+    .bg-yellow span{
+        background-color: gold;
+    }
+   #bg-green{
+      background-color: greenyellow;
+      color: #fff;
+   }
+
+   #text-green{
+    color: green;
+   }
+
 </style>
 <body>
-    <div>
-        구역을 나누는 div 태그
+    <div> 구역을 나누는 <span class="text-red">div 태그</span></div>
+    
+    <div class="bg-blue">
+        <p>123</p>
+        <p>456</p>
+        <p>456</p>
+        <p>456</p>
+        <p>456</p>
+        <p>456</p>
+        <p>456</p>
+        <p>456</p>
     </div>
-    <div class="blue">파란색</div>
-    <p> 본문 작성 시 많이 사용 </p>
+
+    <div class="bg-yellow">
+      <span>123</span>
+      <span>456</span>
+      <span>456</span>
+      <span>456</span>
+      <span>456</span>
+      <span>456</span>
+      <span>456</span>
+    </div>
+
+    <!-- <p> 본문 작성 시 많이 사용 </p> -->
+    <p class="text-red" id="text-green">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, quam! </p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, quam! </p>
+    <p class="text-red">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, quam! </p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, quam! </p>
 
     <!-- heading  tag : h1~h3 주로 사용 -->
-    <h1>안녕하세요</h1>
+    <h1 id="bg-green">안녕하세요</h1>
     <h2>안녕하세요</h2>
-   
+    <h3>안녕하세요</h3>
+
+    <ol>
+      <li>메뉴1</li>
+      <li>메뉴2</li>
+      <li>메뉴3</li>
+    </ol>
+
+    <ul>
+      <li>사과</li>
+      <li>오렌지</li>
+      <li>딸기</li>
+    </ul>
 </body>
 </html>
