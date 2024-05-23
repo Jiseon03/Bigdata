@@ -1,4 +1,14 @@
+
 a{
     text-decoration: none;
     color: #000;
+}
+
+.list a{
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.box {
+    height: 1000px;
 }
