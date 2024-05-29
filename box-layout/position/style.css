@@ -1,0 +1,45 @@
+.position {
+  width: 600px;
+  height: 800px;
+  margin: 50px auto;
+  border: 4px solid lightgray;
+  position: relative;
+}
+
+.position div {
+  width: 200px;
+  height: 120px;
+  border: 1px solid #000;
+  box-sizing: border-box;
+}
+
+.box1 {
+  background-color: lightpink;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 15;
+}
+
+.box2 {
+  background-color: lightyellow;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+}
+
+.box3 {
+  width: 200px;
+  height: 120px;
+  border: 1px solid #000;
+  box-sizing: border-box;
+  background-color: lightskyblue;
+  position: sticky;
+  top: 20px;
+  left: 0px;
+  z-index: 10;
+}
+
+.scroll {
+  height: 1600px;
+}
