@@ -54,7 +54,7 @@
 .back-img {
   background-image: url(../../reponsive/images/배경3.jpg);
   background-size: cover;
-  background-position: center;
+  background-position: top;
   background-repeat: no-repeat;
   background-attachment: fixed;
   width: 450px;
