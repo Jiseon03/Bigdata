@@ -260,6 +260,7 @@ body {
   }
 }
 
+
 /* 모바일 버전 */
 @media screen and (max-width:768px) {
   .back-img h1 {
@@ -296,6 +297,10 @@ body {
   .global-footer li {
     padding: 0 10px;
     color: #fff;
+  }
+
+  .sns-link i {
+    font-size: 20px;
   }
 
   .img-box1{
