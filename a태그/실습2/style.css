@@ -1,0 +1,26 @@
+body{
+  background-color: #000;
+}
+
+.bold{
+  font-weight: 700;
+}
+
+img{
+  margin: 50px 0;
+}
+
+.box{
+  width: 650px;
+  margin: 100px auto;
+  text-align: center;
+}
+
+.box p{
+  font-size: 20px;
+  background-color: #fff;
+  border-radius: 45px;
+  padding: 30px;
+  margin: auto;
+  width: 80%;
+}
