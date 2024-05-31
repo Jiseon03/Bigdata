@@ -13,14 +13,17 @@ popupCloseBtn.addEventListener('click',function(){
 
 
 //sidebar 
-let sidebar = document.querySelector('.sidebar');
-let sidebarOpenBtn = document.querySelector('.sidebar-open-btn');
-let sidebarCloseBtn = document.querySelector('.sidebar-close-btn');
-//sidebar-open-btn 클릭했을때 is-active 클래스 추가
-sidebarOpenBtn.addEventListener('click',function(){
-    sidebar.classList.add('is-active')
-})
-//sidebar-close-btn 클릭했을때 is-active 클래스 추가
-sidebarCloseBtn.addEventListener('click',function(){
-    sidebar.classList.remove('is-active')
-})
+ let sidebar = document.querySelector('.sidebar');
+ let sidebarOpenBtn = document.querySelector('.sidebar-open-btn');
+ let sidebarCloseBtn = document.querySelector('.sidebar-close-btn');
+
+function openSidebar(){
+  sidebar.classList.add('is-active')
+}
+
+function closeSidebar(){
+  sidebar.classList.remove('is-active')
+}
+
+sidebarOpenBtn.addEventListener('click', openSidebar)
+sidebarCloseBtn.addEventListener('click', closeSidebar)
