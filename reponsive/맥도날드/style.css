@@ -86,7 +86,6 @@ body {
   position: sticky;
   left: 0;
   top: 0;
-  z-index: 5;
 }
 
 .lnb-list {
@@ -121,7 +120,7 @@ body {
   width: 90%;
   text-align: center;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   flex-wrap: wrap;
   margin: 0 auto;
 }
@@ -214,8 +213,8 @@ footer a {
 
 .icon-wrap {
   background-color: #fff;
-  width: 60px;
-  height: 60px;
+  width: 50px;
+  height: 50px;
   text-align: center;
   border-radius: 50%;
   display: flex;
@@ -228,38 +227,54 @@ footer a {
 .icon-wrap:hover {
   background-color: rgb(235,27,27);
 }
-.link-list-3 li i:hover {
-  color: #fff;
-}
-.search-wrap {
-  width: 100%;
-  height: 100vh;
-  background-color: #fff;
-  padding-top: 100px;
 
+.link-list-3 li :hover i {
+  color: #fff;
 }
 
 .search {
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.8);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: none;
+}
+
+.search.is-open {
+  display: block;
+}
+
+.search > div {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  height: 100%;
+  width: 70%;
+  margin: 0 auto;
 }
 
-.search input{
+.search-box {
+  display: flex;
+  width: 100%;
+}
+
+.search-box input{
+  flex-grow: 1;
   background-color: #fff;
-  width: 50%;
   border-radius: 30px;
-  padding: 20px;
   margin-right: 20px;
+  padding: 18px 40px;
 }
 
-.search button{
+.search-box button{
   background-color: rgb(255,213,23);
   color: #000;
-  width: 5%;
   border-radius: 30px;
-  padding: 20px;
-  margin-right: 20px;
+  padding: 18px 40px;
+  font-weight: 700;
 }
 
 .search-close-btn {
@@ -272,8 +287,7 @@ footer a {
   justify-content: center;
   align-items: center;
   cursor: pointer;
- 
- 
+
 }
 
 /* 태블릿 버전 */
@@ -292,6 +306,20 @@ footer a {
     margin-bottom: 15px;
   }
 
+  .mac-story-list {
+    width: 50%;
+  }
+  
+  .mac-story li {
+    margin-right: 30px;
+  }
+  
+  .mac-story li img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
 }
 
 /* 모바일 버전 */
@@ -309,11 +337,62 @@ footer a {
   }
 
   .burger {
-    width: 70%;
+    width: 90%;
     margin-right: 15px;
     margin-bottom: 15px;
   }
 
+  .bar i{
+    font-size: 26px;
+    cursor: pointer;
+  }
 
- 
+  footer{
+    flex-wrap: wrap;
+  }
+  
+  .link-list-1{
+    padding: 0;
+  }
+
+  .link-list-2{
+    flex-grow: 1;
+    text-align: right;
+  }
+  
+  .link-list-3 {
+    justify-content: center;
+    width: 100%;
+    padding: 0;
+  }
+  
+  .sidebar {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: #fff;
+    width: 35%;
+    height: 100%;
+    padding: 30px;
+    z-index: 100;
+  }
+
+  .sidebar.is-active {
+    display: block;
+  }
+  
+  .overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+
+  .overlay.is-active {
+    display: block;
+  } 
 }
