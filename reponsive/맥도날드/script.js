@@ -12,5 +12,23 @@ function searchClose(){
 }
 
 searchOpenBtn.addEventListener('click',searchOpen);
-
 searchCloseBtn.addEventListener('click',searchClose);
+
+//사이드바 오픈 클릭 했을때 클릭이벤트 추가
+let sidebar = document.querySelector('.sidebar');
+let overlay = document.querySelector('.overlay');
+let sidebarOpenBtn = document.querySelector('.bar');
+
+
+function sidebarOpen(){
+    sidebar.classList.add('is-active');
+    overlay.classList.add('is-active');
+}
+
+function sidebarClose(){
+    sidebar.classList.remove('is-active');
+    overlay.classList.remove('is-active');
+}
+
+sidebarOpenBtn.addEventListener('click',sidebarOpen);
+overlay.addEventListener('click',sidebarClose);

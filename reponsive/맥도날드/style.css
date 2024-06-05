@@ -367,32 +367,40 @@ footer a {
   }
   
   .sidebar {
-    display: none;
+    transform: translateX(-100%);
     position: fixed;
     left: 0;
     top: 0;
     background-color: #fff;
-    width: 35%;
+    width: 30%;
     height: 100%;
     padding: 30px;
     z-index: 100;
+    transition: all 500ms ease-in-out;
   }
 
   .sidebar.is-active {
-    display: block;
+    transform: translateX(0);
   }
-  
+
+  .sidebar li {
+    padding: 10px 0;
+  }
+
   .overlay {
-    display: none;
+    visibility: hidden;
+    opacity: 0;
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
     background-color: rgba(0, 0, 0, 0.8);
+    transition: opacity 500ms ease-in-out;
   }
 
   .overlay.is-active {
-    display: block;
+    visibility: visible;
+    opacity: 1;
   } 
 }
