@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>input 태그 (회원가입)</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.slim.js"
+      integrity="sha256-UgvvN8vBkgO0luPSUl2s8TIlOSYRoGFAX4jlCIm9Adc="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <h1>회원가입</h1>
+      <p>회원가입 페이지 입니다.</p>
+    </div>
+
+    <form action="./action.html" method="GET">
+      <table>
+        <tr>
+          <td>아이디</td>
+          <td><input type="text" /></td>
+        </tr>
+        <tr>
+          <td>비밀번호</td>
+          <td><input type="password" /></td>
+        </tr>
+        <tr>
+          <td>이름</td>
+          <td><input type="text" /></td>
+        </tr>
+        <tr>
+          <td>이메일</td>
+          <td><input type="email" /></td>
+        </tr>
+        <tr>
+          <td>국적</td>
+          <td>
+            <select name="" id="">
+              <option value="">대한민국</option>
+              <option value="">대한민국</option>
+              <option value="">대한민국</option>
+              <option value="">대한민국</option>
+              <option value="">대한민국</option>
+              <option value="">대한민국</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td>생년월일</td>
+          <td><select name="" id="year"></select>년</td>
+          <td><select name="" id="month"></select>월</td>
+          <td><select name="" id="day"></select>일</td>
+        </tr>
+        <tr>
+          <td>성별</td>
+          <span><input type="radio" name="gender">남자</span>
+          <span><input type="radio" name="gender">여자</span>
+        </tr>
+          <tr>
+            <td>전화번호</td>
+            <td><input type="tel"></td>
+          </tr>
+          <tr>
+            <td>희망연봉</td>
+            <td><input type="range"></td>
+          </tr>
+          <tr>
+            <td>취미</td>
+            <td><span><input type="checkbox">등산</span></td>
+            <td><span><input type="checkbox">양궁</span></td>
+            <td><span><input type="checkbox">양궁</span></td>
+            <td><span><input type="checkbox">양궁</span></td>
+            <td><span><input type="checkbox">양궁</span></td>
+            <td><span><input type="checkbox">양궁</span></td>
+            <td><span><input type="checkbox">양궁</span></td>
+            <td><span><input type="checkbox">양궁</span></td>
+            <td><span><input type="checkbox">양궁</span></td>
+            <td><span><input type="checkbox">양궁</span></td>
+          </tr>
+          <tr>
+            <td>증명사진</td>
+            <td><input type="file"></td>
+          </tr>
+          <tr>
+            <td>자기소개서</td>
+            <td><textarea name="" id="" placeholder="400자 미만으로 작성하시오."></textarea></td>
+          </tr>
+      </table>
+
+      <input type="submit" />
+      <input type="reset" />
+    </form>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
