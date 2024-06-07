@@ -1,13 +1,13 @@
-body {
+* {
     margin: 0;
     padding: 0;
 }
 
 header {
     background-color: #fff;
-    color: #000;
+    color: #333;
     padding: 15px;
-    border-bottom: 1px solid #000;
+    border-bottom: 1px solid #3d3d3d;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -21,18 +21,20 @@ header h1 {
 .header-btn {
     width: 50px;
     height: 30px;
-    background-color: #000;
+    background-color: #333;
     color: #fff;
     border-radius: 15px;
     font-size: 10px;
+    cursor: pointer;
 }
 
+/* darkmode */
 header.dark{
-    background-color: #000;
+    background-color: #333;
     color: #fff;
 }
 
 .header-btn.dark{
     background-color: #fff;
-    color: #000;
+    color: #333;
 }
