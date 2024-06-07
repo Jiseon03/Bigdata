@@ -1,0 +1,38 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #fff;
+    color: #000;
+    padding: 15px;
+    border-bottom: 1px solid #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 25px;
+}
+
+.header-btn {
+    width: 50px;
+    height: 30px;
+    background-color: #000;
+    color: #fff;
+    border-radius: 15px;
+    font-size: 10px;
+}
+
+header.dark{
+    background-color: #000;
+    color: #fff;
+}
+
+.header-btn.dark{
+    background-color: #fff;
+    color: #000;
+}
