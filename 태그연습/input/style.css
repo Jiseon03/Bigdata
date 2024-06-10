@@ -1,3 +1,17 @@
-span {
-    display: inline-block;
+.wrapper {
+    width: 80%;
+    margin: 80px auto;
+}
+
+.join-txt {
+    border-bottom: 2px solid #aaa;
+    padding: 20px 0;
+}
+
+.txt-green{
+    color: green;
+}
+
+.txt-red{
+    color: red;
 }

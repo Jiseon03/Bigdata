@@ -14,85 +14,152 @@
   <body>
     <div class="wrapper">
       <h1>회원가입</h1>
-      <p>회원가입 페이지 입니다.</p>
-    </div>
+      <p class="join-txt">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque ex
+        minima possimus?<br />Velitㄹ cum iusto quo voluptas facere molestiae
+        itaque pariatur consectetur nesciunt quidem! Repellendus consectetur
+        earum fugit cupiditate corporis.
+      </p>
+      <form id="join-form" action="./action.html" method="get">
+        <table>
+          <tr>
+            <td><label for="userid">아이디</label></td>
+            <td>
+              <input
+                id="userid"
+                type="text"
+                placeholder="아이디를 입력하세요."
+              />
+              <button type="button">아이디 중복체크</button>
+              <div id="idtxt"></div>
+            </td>
+          </tr>
 
-    <form action="./action.html" method="GET">
-      <table>
-        <tr>
-          <td>아이디</td>
-          <td><input type="text" /></td>
-        </tr>
-        <tr>
-          <td>비밀번호</td>
-          <td><input type="password" /></td>
-        </tr>
-        <tr>
-          <td>이름</td>
-          <td><input type="text" /></td>
-        </tr>
-        <tr>
-          <td>이메일</td>
-          <td><input type="email" /></td>
-        </tr>
-        <tr>
-          <td>국적</td>
-          <td>
-            <select name="" id="">
-              <option value="">대한민국</option>
-              <option value="">대한민국</option>
-              <option value="">대한민국</option>
-              <option value="">대한민국</option>
-              <option value="">대한민국</option>
-              <option value="">대한민국</option>
-            </select>
-          </td>
-        </tr>
-        <tr>
-          <td>생년월일</td>
-          <td><select name="" id="year"></select>년</td>
-          <td><select name="" id="month"></select>월</td>
-          <td><select name="" id="day"></select>일</td>
-        </tr>
-        <tr>
-          <td>성별</td>
-          <span><input type="radio" name="gender">남자</span>
-          <span><input type="radio" name="gender">여자</span>
-        </tr>
+          <tr>
+            <td><label for="userpw">비밀번호</label></td>
+            <td>
+              <input id="userpw" type="password" />
+              <p class="pw-warn"></p>
+            </td>
+          </tr>
+
+          <tr>
+            <td><label for="user-pwcheck">비밀번호 재확인</label></td>
+            <td>
+              <input id="user-pwcheck" type="password" />
+              <p class="pwcheck-warn"></p>
+            </td>
+          </tr>
+
+          <tr>
+            <td><label for="username">이름</label></td>
+            <td>
+              <input id="username" type="text" />
+            </td>
+          </tr>
+
+          <tr>
+            <td><label for="user-email">이메일</label></td>
+            <td>
+              <input id="user-email" type="email" />
+            </td>
+          </tr>
+
+          <tr>
+            <td><label for="user-nation">국적</label></td>
+            <td>
+              <select name="" id="user-nation">
+                <optgroup label="Asia">
+                  <option value="kor">대한민국</option>
+                  <option value="jap">일본</option>
+                  <option value="chi" disabled>중국</option>
+                </optgroup>
+              </select>
+            </td>
+          </tr>
+
+          <tr>
+            <td>생년월일</td>
+            <td>
+              <span><select name="" id="year"></select>년</span
+              >
+              <span
+                ><select name="" id="month"></select
+                >월</span
+              >
+              <span
+                ><select name="" id="date"></select
+                >일</span
+              >
+            </td>
+          </tr>
+
+          <tr>
+            <td>성별</td>
+            <td>
+              <label>
+                <input type="radio" name="gender" id="gender" value="1"/>남자
+              </label>
+              <label>
+                <input type="radio" name="gender" id="gender" value="0"/>여자
+              </label>
+            </td>
+          </tr>
+
           <tr>
             <td>전화번호</td>
-            <td><input type="tel"></td>
+            <td>
+              <select name="" id="">]
+                <option value="">010</option>
+                <option value="">042</option>
+                <option value="">02</option>
+              </select> -
+              <input type="text" maxlength="4"> -
+              <input type="text" maxlength="4">
+            </td>
           </tr>
+
           <tr>
             <td>희망연봉</td>
-            <td><input type="range"></td>
+            <td><input type="range" name="" id=""></td>
           </tr>
+
           <tr>
             <td>취미</td>
-            <td><span><input type="checkbox">등산</span></td>
-            <td><span><input type="checkbox">양궁</span></td>
-            <td><span><input type="checkbox">양궁</span></td>
-            <td><span><input type="checkbox">양궁</span></td>
-            <td><span><input type="checkbox">양궁</span></td>
-            <td><span><input type="checkbox">양궁</span></td>
-            <td><span><input type="checkbox">양궁</span></td>
-            <td><span><input type="checkbox">양궁</span></td>
-            <td><span><input type="checkbox">양궁</span></td>
-            <td><span><input type="checkbox">양궁</span></td>
+            <td>
+              <label><input type="checkbox" name="hobby" id="" >양궁</label>
+              <label><input type="checkbox" name="hobby" id="" >등산</label>
+              <label><input type="checkbox" name="hobby" id="" >영화감상</label>
+              <label><input type="checkbox" name="hobby" id="" >음악감상</label>
+              <label><input type="checkbox" name="hobby" id="" >축구</label>
+              <label><input type="checkbox" name="hobby" id="" >골프</label>
+              <label><input type="checkbox" name="hobby" id="" >탁구</label>
+            </td>
           </tr>
+
           <tr>
             <td>증명사진</td>
-            <td><input type="file"></td>
+            <td>
+              <input type="file">
+            </td>
           </tr>
+
           <tr>
             <td>자기소개서</td>
-            <td><textarea name="" id="" placeholder="400자 미만으로 작성하시오."></textarea></td>
+            <td>
+              <textarea name="" id=""></textarea>
+            </td>
           </tr>
-      </table>
 
-      <input type="submit" />
-      <input type="reset" />
-    </form>
+          <tr>
+            <td>
+              <input type="submit" id="submit-btn">
+              <input type="reset">
+            </td>
+          </tr>
+        </table>
+      </form>
+    </div>
 
     <script src="./script.js"></script>
   </body>
